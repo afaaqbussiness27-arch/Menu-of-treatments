@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon Price List</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #fdf6f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .card {
+    background: #fff9f5;
+    width: 620px;
+    border-radius: 24px;
+    padding: 48px 44px;
+    box-shadow: 0 8px 40px rgba(180,130,80,0.10);
+    border: 1.5px solid #f0dece;
+  }
+
+  .salon-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #c49a6c;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .main-heading {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #3b2712;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .divider-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0 36px;
+  }
+
+  .divider-line span {
+    height: 1px;
+    width: 80px;
+    background: linear-gradient(to right, transparent, #c49a6c);
+  }
+  .divider-line span:last-child {
+    background: linear-gradient(to left, transparent, #c49a6c);
+  }
+
+  .divider-line .diamond {
+    width: 8px;
+    height: 8px;
+    background: #c49a6c;
+    transform: rotate(45deg);
+  }
+
+  .treatment-block {
+    margin-bottom: 28px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #f0dece;
+  }
+
+  .treatment-header {
+    background: linear-gradient(135deg, #c49a6c, #e8c49a);
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .treatment-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .treatment-badge {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  .treatment-rows {
+    background: #fff;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 22px;
+    border-bottom: 1px solid #faeee4;
+  }
+
+  .row:last-child {
+    border-bottom: none;
+  }
+
+  .row:nth-child(even) {
+    background: #fffaf6;
+  }
+
+  .length-label {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #7a5c3e;
+    font-weight: 500;
+  }
+
+  .price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #c49a6c;
+  }
+
+  .price-unit {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    color: #c49a6c;
+    font-weight: 400;
+    margin-left: 2px;
+    vertical-align: middle;
+  }
+
+  .footer-note {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #c49a6c;
+    text-transform: uppercase;
+    margin-top: 28px;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <p class="salon-title">Treatment Menu</p>
+  <h1 class="main-heading">Our Services</h1>
+  <div class="divider-line">
+    <span></span>
+    <div class="diamond"></div>
+    <span></span>
+  </div>
+
+  <!-- Hair Extenso -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Hair Extenso</span>
+      <span class="treatment-badge">50% Off</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">7,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">8,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">9,500 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Keratin Treatment -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Keratin Treatment</span>
+      <span class="treatment-badge">50% Off</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">6,000 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">7,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">9,500 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Hair Rebonding -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Hair Rebonding</span>
+      <span class="treatment-badge">50% Off</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">7,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">8,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">10,000 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Olaplex -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Olaplex Treatment</span>
+      <span class="treatment-badge">Premium</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">5,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">7,000 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">8,500 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Hair Botox / Blutox -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Hair Botox / Blutox</span>
+      <span class="treatment-badge">Premium</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">6,000 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">7,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">9,000 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Nanoplastia -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Nanoplastia</span>
+      <span class="treatment-badge">Premium</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">7,000 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">8,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">10,500 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <!-- Kerabond -->
+  <div class="treatment-block">
+    <div class="treatment-header">
+      <span class="treatment-name">Kerabond</span>
+      <span class="treatment-badge">Premium</span>
+    </div>
+    <div class="treatment-rows">
+      <div class="row"><span class="length-label">Shoulder Length</span><span class="price">6,000 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Mid Back Length</span><span class="price">8,500 <span class="price-unit">PKR</span></span></div>
+      <div class="row"><span class="length-label">Waist Length</span><span class="price">12,000 <span class="price-unit">PKR</span></span></div>
+    </div>
+  </div>
+
+  <p class="footer-note">✦ All prices are inclusive of treatment &amp; styling ✦</p>
+
+</div>
+</body>
+</html>
